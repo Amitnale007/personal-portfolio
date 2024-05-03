@@ -1,9 +1,10 @@
 import { Nav } from "react-bootstrap";
-import React from "react";
+import React, { useState } from "react";
 import "./nav.css";
 import { useNavigate } from "react-router-dom";
 function NavBar(props) {
   const pages = ["Home", "About", "Contact", "Projects"];
+  const [active, setActive] = useState("/home");
   const navigate = useNavigate();
   return (
     <div>
@@ -15,8 +16,9 @@ function NavBar(props) {
           backgroundColor: "rgb(18, 18, 18)",
           boxShadow: "0 5px 5px black",
         }}
-        // activeKey="/home"
+        activeKey={active}
         onSelect={(selectedKey) => {
+          setActive(selectedKey);
           if (selectedKey === "/home") navigate("/");
           else navigate(selectedKey);
         }}
