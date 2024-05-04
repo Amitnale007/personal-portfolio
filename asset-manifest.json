@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Amitnale007/personal-portfolio/static/css/main.82e13a28.css",
-    "main.js": "/Amitnale007/personal-portfolio/static/js/main.886fc596.js",
-    "static/js/453.1407b060.chunk.js": "/Amitnale007/personal-portfolio/static/js/453.1407b060.chunk.js",
-    "static/media/image.jpg": "/Amitnale007/personal-portfolio/static/media/image.50ce27030777ef74838e.jpg",
-    "static/media/bootstrap-icons.woff?": "/Amitnale007/personal-portfolio/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
-    "static/media/bootstrap-icons.woff2?": "/Amitnale007/personal-portfolio/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
-    "index.html": "/Amitnale007/personal-portfolio/index.html",
-    "main.82e13a28.css.map": "/Amitnale007/personal-portfolio/static/css/main.82e13a28.css.map",
-    "main.886fc596.js.map": "/Amitnale007/personal-portfolio/static/js/main.886fc596.js.map",
-    "453.1407b060.chunk.js.map": "/Amitnale007/personal-portfolio/static/js/453.1407b060.chunk.js.map"
+    "main.css": "/personal-portfolio/static/css/main.b73bd693.css",
+    "main.js": "/personal-portfolio/static/js/main.89d3aacd.js",
+    "static/js/453.1407b060.chunk.js": "/personal-portfolio/static/js/453.1407b060.chunk.js",
+    "static/media/image.jpg": "/personal-portfolio/static/media/image.50ce27030777ef74838e.jpg",
+    "static/media/bootstrap-icons.woff?": "/personal-portfolio/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/bootstrap-icons.woff2?": "/personal-portfolio/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
+    "index.html": "/personal-portfolio/index.html",
+    "main.b73bd693.css.map": "/personal-portfolio/static/css/main.b73bd693.css.map",
+    "main.89d3aacd.js.map": "/personal-portfolio/static/js/main.89d3aacd.js.map",
+    "453.1407b060.chunk.js.map": "/personal-portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.82e13a28.css",
-    "static/js/main.886fc596.js"
+    "static/css/main.b73bd693.css",
+    "static/js/main.89d3aacd.js"
   ]
 }
