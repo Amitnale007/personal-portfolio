@@ -23,11 +23,11 @@ function NavBar(props) {
           else navigate(selectedKey);
         }}
       >
-        <Nav.Item style={{ marginLeft: 40 }}>
+        {/* <Nav.Item style={{ marginLeft: 40 }}>
           <Nav.Link style={{ color: "white" }}>
             <i className="bi bi-box2-heart-fill"></i>
           </Nav.Link>
-        </Nav.Item>
+        </Nav.Item> */}
 
         {pages.map((page) => (
           <Nav.Item key={page}>

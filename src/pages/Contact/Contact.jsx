@@ -4,7 +4,14 @@ import { Container } from "react-bootstrap";
 function Contact(props) {
   return (
     <Container
-      style={{ display: "flex", justifyContent: "center", marginTop: "5%" }}
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        justifyContent: "center",
+        alignItems: "center",
+        minHeight: "100vh",
+        // border: "1px solid red",
+      }}
     >
       <div style={{ width: 500 }}>
         <ContactForm></ContactForm>
