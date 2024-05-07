@@ -15,6 +15,8 @@ function NavBar(props) {
           fontSize: 20,
           backgroundColor: "rgb(18, 18, 18)",
           boxShadow: "0 5px 5px black",
+          paddingTop: 10,
+          paddingBottom: 10,
         }}
         activeKey={active}
         onSelect={(selectedKey) => {

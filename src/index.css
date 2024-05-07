@@ -5,9 +5,29 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color:white;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+
+/* CSS */
+::-webkit-scrollbar {
+  width: 14px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #000000, #805432); /* Color of the thumb */
+  /* border-radius: 5px; Radius of the thumb */
+}
+
+::-webkit-scrollbar-track {
+  background-color: grey; /* Color of the track */
+}
+

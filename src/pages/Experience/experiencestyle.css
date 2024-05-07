@@ -1,0 +1,29 @@
+.single{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 30px;
+    width: 1200px;
+    border-radius: 10px;
+    border: 2px solid rgb(191, 191, 60);
+    box-shadow: 5px 5px 10px 10px rgba(101, 175, 10, 0.5)
+
+ 
+}
+
+.single .left{
+    /* border:1px solid red; */
+    height: 200px;
+    width: 300px;
+}
+.single .left img{
+    height: 120px;
+    width: 240px;
+    object-fit: contain;
+}
+.single .right{
+    /* border:1px solid green; */
+    height: 200px;
+    width: 900px;
+}

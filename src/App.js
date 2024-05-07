@@ -14,7 +14,7 @@ import "./App.css";
  */
 function App() {
   return (
-    <BrowserRouter basename="/personal-portfolio">
+    <BrowserRouter>
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />

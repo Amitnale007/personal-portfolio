@@ -1,12 +1,10 @@
 body {
     /* Linear gradient */
-
+    fontFamily: "roboto";
     background: linear-gradient(to right, #121111, #675f62);
-    /* Optionally, you can set other styles for the body */
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    /* Add more body styles as needed */
- 
+
   }
   
