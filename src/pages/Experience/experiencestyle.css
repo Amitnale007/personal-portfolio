@@ -27,3 +27,15 @@
     height: 200px;
     width: 900px;
 }
+@media screen and (min-width: 300px) and (max-width: 1024px){
+    .single{
+        flex-direction: column;
+        display: flex;
+        align-items: flex-start;
+        width: 90%;
+        align-items: center
+    }
+    .single .left{
+        width: 300px;
+    }
+}

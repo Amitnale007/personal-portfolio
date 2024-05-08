@@ -1,13 +1,14 @@
 import { Nav } from "react-bootstrap";
 import React, { useState } from "react";
 import "./nav.css";
+import Container from "react-bootstrap/Container";
 import { useNavigate } from "react-router-dom";
 function NavBar(props) {
   const pages = ["Home", "About", "Contact", "Projects"];
   const [active, setActive] = useState("/home");
   const navigate = useNavigate();
   return (
-    <div>
+    <>
       <Nav
         // className="navbar"
         variant="underline"
@@ -42,7 +43,7 @@ function NavBar(props) {
           </Nav.Item>
         ))}
       </Nav>
-    </div>
+    </>
   );
 }
 

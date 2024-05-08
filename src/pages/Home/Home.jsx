@@ -37,9 +37,9 @@ function Home(props) {
           </div>
         </div>
       </Container>
-      <h1 style={{ textAlign: "center", color: "white" }}>Experience</h1>
+      <h1 className="heading">Experience</h1>
       <Experience></Experience>
-      <h1 style={{ textAlign: "center", color: "white" }}>Projects</h1>
+      <h1 className="heading">Projects</h1>
       <Projects></Projects>
     </>
   );
