@@ -40,9 +40,10 @@ function Projects({ title, subtitle }) {
     <>
       <Container>
         <div className="cardcon">
-          {arr.map((item) => (
+          {arr.map((item, index) => (
             <Card
               key={item.id}
+              index={index}
               title={item.title}
               subtitle={item.subtitle}
             ></Card>

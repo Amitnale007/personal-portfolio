@@ -8,8 +8,6 @@
     border-radius: 10px;
     border: 2px solid rgb(191, 191, 60);
     box-shadow: 5px 5px 10px 10px rgba(101, 175, 10, 0.5)
-
- 
 }
 
 .single .left{
@@ -25,7 +23,7 @@
 .single .right{
     /* border:1px solid green; */
     height: 200px;
-    width: 900px;
+    max-width: 900px;
 }
 @media screen and (min-width: 300px) and (max-width: 1024px){
     .single{
@@ -38,4 +36,5 @@
     .single .left{
         width: 300px;
     }
+
 }

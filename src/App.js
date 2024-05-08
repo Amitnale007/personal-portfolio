@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "./component/Navbar/NavBar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import "animate.css/animate.min.css";
 import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
@@ -14,7 +15,7 @@ import "./App.css";
  */
 function App() {
   return (
-    <BrowserRouter basename="/personal-portfolio">
+    <BrowserRouter>
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />

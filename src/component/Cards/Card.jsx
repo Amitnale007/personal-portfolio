@@ -1,11 +1,30 @@
 import Card from "react-bootstrap/Card";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+function Projects({ index }) {
+  console.log(index);
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
 
-import Container from "react-bootstrap/Container";
-// import "./projectstyle.css";
-function Projects({ title, subtitle }) {
+  const animation = () => {
+    console.log("hellod", index);
+    switch (index % 3) {
+      case 0:
+        return "fade-right";
+      case 1:
+        return "fade-up";
+      case 2:
+        return "fade-left";
+      default:
+        return "";
+    }
+  };
   return (
     <>
       <Card
+        data-aos={animation()}
         style={{
           margin: 10,
           width: "18rem",
