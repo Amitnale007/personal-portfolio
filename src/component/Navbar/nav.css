@@ -1,2 +1,12 @@
 
 
+:root {
+    --custom-nav-pills-link-active-bg: #20262e; /* Change color as per your preference */
+  }
+  
+  .nav-pills .nav-link.active,
+  .nav-pills .show > .nav-link {
+    color: var(--bs-nav-pills-link-active-color);
+    background-color: var(--custom-nav-pills-link-active-bg); /* Use the custom variable here */
+  }
+  

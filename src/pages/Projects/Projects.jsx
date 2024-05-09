@@ -1,6 +1,4 @@
-import Button from "react-bootstrap/Button";
 import Card from "../../component/Cards/Card";
-import MyImage from "../../assets/image.jpg";
 import Container from "react-bootstrap/Container";
 import "./projectstyle.css";
 function Projects({ title, subtitle }) {

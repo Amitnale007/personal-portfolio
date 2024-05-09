@@ -2,6 +2,7 @@
     color:white;
     height: 100vh;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     /* border: 1px solid red; */
@@ -10,7 +11,7 @@
 .home .left{
     /* border: 1px solid yellow;  */
     width: 800px;
-    /* height: 500px; */
+    height: 500px;
     padding: 30px;
 }
 .home .left h1 span{
