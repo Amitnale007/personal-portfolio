@@ -1,6 +1,7 @@
 import { Nav, Navbar, Container } from "react-bootstrap";
 import React, { useState } from "react";
 import "./nav.css";
+import { BriemHand } from "google-fonts";
 import { useNavigate } from "react-router-dom";
 
 function NavBar(props) {
@@ -26,13 +27,27 @@ function NavBar(props) {
             paddingRight: 32,
           }}
         >
-          Personal PortFolio
+          <img
+            alt=""
+            src={require("../../assets/logo.jpeg")}
+            width="35"
+            height="35"
+            className=" d-inline-block align-top "
+            style={{
+              borderRadius: "50%",
+              border: "1px solid rgb(255, 52, 108)",
+            }}
+          />{" "}
+          <span style={{ fontFamily: "Briem Hand, cursive" }}>
+            {" "}
+            Personal PortFolio
+          </span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav
             className="mr-auto"
-            variant={window.innerWidth > 700 ? "underline" : "pills"}
+            variant="underline"
             activeKey={active}
             onSelect={(selectedKey) => {
               setActive(selectedKey);

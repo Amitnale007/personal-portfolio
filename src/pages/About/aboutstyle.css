@@ -1,0 +1,51 @@
+.aboutCon{
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 3%;
+}
+ .aboutCon img{
+    /* margin: 2%; */
+    height: 500px;
+    width: 300px;
+    border-radius: 20px;
+    /* border:5px solid red; */
+    object-fit: cover;
+ }
+
+
+ .aboutCon .info h1 {
+    color: #f41460;
+ }
+ .aboutCon .tech h1{
+    color: #f41460;
+ }
+ .aboutCon .info p{
+    color: #bfbfbf;
+    width: 400px;
+ }
+ .tech img{
+    height: 30px;
+    width: 30px;
+ }
+
+ .tech{
+    /* padding: 5%; */
+ }
+
+ .tech h4{
+    color:white;
+    margin-top: 20px;
+
+ }
+
+
+
+ @media screen and (min-width: 300px) and (max-width: 768px)
+ {
+    .aboutCon .info p{
+        width: 100%;
+    }
+ }

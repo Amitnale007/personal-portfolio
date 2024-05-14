@@ -1,12 +1,8 @@
 
 
-:root {
-    --custom-nav-pills-link-active-bg: #20262e; /* Change color as per your preference */
+.briem-hand-text {
+    font-family: "Briem Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Example weight value */
+    font-style: normal;
   }
-  
-  .nav-pills .nav-link.active,
-  .nav-pills .show > .nav-link {
-    color: var(--bs-nav-pills-link-active-color);
-    background-color: var(--custom-nav-pills-link-active-bg); /* Use the custom variable here */
-  }
-  

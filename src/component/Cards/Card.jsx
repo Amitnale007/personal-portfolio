@@ -9,7 +9,7 @@ function Projects({ index }) {
   }, []);
 
   const animation = () => {
-    console.log("hellod", index);
+    if (window.innerWidth < 800) return "zoom-in";
     switch (index % 3) {
       case 0:
         return "fade-right";

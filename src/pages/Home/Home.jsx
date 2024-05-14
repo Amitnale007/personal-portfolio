@@ -39,8 +39,6 @@ function Home(props) {
       </Container>
       <h1 className="heading">Experience</h1>
       <Experience></Experience>
-      <h1 className="heading">Projects</h1>
-      <Projects></Projects>
     </>
   );
 }

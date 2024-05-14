@@ -1,25 +1,87 @@
+.android {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.android img {
+  height: 600px;
+  width: 300px;
+}
+.android h1 {
+  color: #e73983;
+}
+.android h3 {
+  color: white;
+}
 
-   
-   .cardcon{
-    display: flex;
-    justify-content: center;
+.android .left ul {
+  color: #c882a5;
+}
+.cardcon {
+  display: flex;
+  justify-content: center;
+}
+.heading {
+  text-align: center;
+  color: white;
+}
 
-    
-   }
+.android .left .data {
+  padding: 20px;
+}
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .cardcon {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
-   @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .cardcon{
-        flex-direction: column;
-        align-items: center
-    }
-   }
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .cardcon {
+    flex-direction: column;
+    align-items: center;
+  }
+  .android {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .heading {
+    margin-top: 20px;
+  }
+  .android h1 {
+    text-align: center;
+  }
+}
 
+.cssbuttons-io-button {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 0.8em 1.5em 0.8em 1.2em;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(
+    0deg,
+    rgb(154, 60, 140) 0%,
+    rgb(123, 74, 95) 100%
+  );
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #d036b9be;
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+}
 
-   @media screen and (min-width: 300px) and (max-width: 768px)
-   {
-    .cardcon{
-        flex-direction: column;
-        align-items: center;
-    }
-   }
+.cssbuttons-io-button svg {
+  margin-right: 8px;
+}
+
+.cssbuttons-io-button:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em #dd35cfbe;
+}
+
+.cssbuttons-io-button:active {
+  box-shadow: 0 0.3em 1em -0.5em #bc19a4be;
+}
