@@ -1,6 +1,7 @@
 import Card from "../../component/Cards/Card";
 import Container from "react-bootstrap/Container";
 import "./projectstyle.css";
+import { saveAs } from "file-saver";
 
 function Projects({ title, subtitle }) {
   const arr = [
@@ -24,17 +25,19 @@ function Projects({ title, subtitle }) {
     },
   ];
   const handleDownload = () => {
-    const ApkUrl = "/resourses/geeta.apk";
-    const link = document.createElement("a");
-    link.href = ApkUrl;
-    link.download = "Bhagwat Geeta.apk";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    // const ApkUrl = "/resourses/geeta.apk";
+    // const link = document.createElement("a");
+    // link.href = ApkUrl;
+    // link.download = "Bhagwat Geeta.apk";
+    // document.body.appendChild(link);
+    // link.click();
+    // document.body.removeChild(link);
+    const ApkUrl = `${process.env.PUBLIC_URL}/geeta.apk`; // Path to the APK file in the public directory
+    saveAs(ApkUrl, "Bhagwat Geeta.apk");
   };
   return (
     <>
-      <h1 className="heading">Projects res</h1>
+      <h1 className="heading">Projects r</h1>
       <Container>
         <div className="android">
           <div className="left">
