@@ -4,6 +4,7 @@ import "./aboutstyle.css";
 
 import SocialIcon from "../../component/SocialIcon/SocialIcon";
 import HorizontalBar from "../../component/HorizontalBar";
+import Education from "../../component/Education/Education";
 
 function About(props) {
   const data = [
@@ -49,6 +50,7 @@ function About(props) {
             })}
           </div>
         </div>
+        <Education></Education>
         <SocialIcon></SocialIcon>
       </Container>
     </>
