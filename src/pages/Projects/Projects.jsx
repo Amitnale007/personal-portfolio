@@ -24,7 +24,7 @@ function Projects({ title, subtitle }) {
     },
   ];
   const handleDownload = () => {
-    const ApkUrl = "../../assets/geeta.apk";
+    const ApkUrl = "/geeta.apk";
     const link = document.createElement("a");
     link.href = ApkUrl;
     link.download = "Bhagwat Geeta.apk";
