@@ -25,19 +25,13 @@ function Projects({ title, subtitle }) {
     },
   ];
   const handleDownload = () => {
-    // const ApkUrl = "/resourses/geeta.apk";
-    // const link = document.createElement("a");
-    // link.href = ApkUrl;
-    // link.download = "Bhagwat Geeta.apk";
-    // document.body.appendChild(link);
-    // link.click();
-    // document.body.removeChild(link);
     const ApkUrl = `${process.env.PUBLIC_URL}/geeta.apk`; // Path to the APK file in the public directory
     saveAs(ApkUrl, "Bhagwat Geeta.apk");
   };
+
   return (
     <>
-      <h1 className="heading">Projects</h1>
+      <h1 className="headings">Projects</h1>
       <Container>
         <div className="android">
           <div className="left">
@@ -48,6 +42,9 @@ function Projects({ title, subtitle }) {
                 <li> Multiple Author Translation Added</li>
                 <li> Hindi/English Langunge Switch</li>
                 <li> Smooth App Interface</li>
+                <li> Intenet Only Need On First Open of App</li>
+                <li> 99% Percent Offline App</li>
+                <li> 100% Secured</li>
               </ul>
               <h3>Technologies Used</h3>
               <ul>
@@ -76,7 +73,7 @@ function Projects({ title, subtitle }) {
             <img src={require("../../assets/project.png")} alt="" />
           </div>
         </div>
-        <div className="cardcon">
+        {/* <div className="cardcon">
           {arr.map((item, index) => (
             <Card
               key={item.id}
@@ -85,7 +82,7 @@ function Projects({ title, subtitle }) {
               subtitle={item.subtitle}
             ></Card>
           ))}
-        </div>
+        </div> */}
       </Container>
     </>
   );

@@ -21,7 +21,7 @@
   display: flex;
   justify-content: center;
 }
-.heading {
+.headings {
   text-align: center;
   color: white;
 }
@@ -46,7 +46,7 @@
     flex-direction: column-reverse;
     align-items: center;
   }
-  .heading {
+  .headings {
     margin-top: 20px;
   }
   .android h1 {

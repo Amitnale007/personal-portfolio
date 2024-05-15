@@ -3,7 +3,6 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 function Projects({ index }) {
-  console.log(index);
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);

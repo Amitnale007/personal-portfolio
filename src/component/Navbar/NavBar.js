@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 function NavBar(props) {
   const pages = ["Home", "About", "Contact", "Projects"];
   const [active, setActive] = useState("/home");
+  const [expanded, setExpanded] = useState(false);
   const navigate = useNavigate();
 
   return (
@@ -14,6 +15,7 @@ function NavBar(props) {
       <Navbar
         variant="dark"
         expand="lg"
+        expanded={expanded}
         style={{
           backgroundColor: "rgb(18, 18, 18)",
           boxShadow: "0 5px 5px black",
@@ -43,7 +45,10 @@ function NavBar(props) {
             Personal PortFolio
           </span>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle
+          aria-controls="basic-navbar-nav"
+          onClick={() => setExpanded(!expanded)}
+        />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav
             className="mr-auto"
@@ -53,6 +58,7 @@ function NavBar(props) {
               setActive(selectedKey);
               if (selectedKey === "/home") navigate("/");
               else navigate(selectedKey);
+              setExpanded(false);
             }}
           >
             {pages.map((page) => (
