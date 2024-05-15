@@ -24,7 +24,7 @@ function Projects({ title, subtitle }) {
     },
   ];
   const handleDownload = () => {
-    const ApkUrl = "/geeta.apk";
+    const ApkUrl = "/resourses/geeta.apk";
     const link = document.createElement("a");
     link.href = ApkUrl;
     link.download = "Bhagwat Geeta.apk";
@@ -34,7 +34,7 @@ function Projects({ title, subtitle }) {
   };
   return (
     <>
-      <h1 className="heading">Projects hello</h1>
+      <h1 className="heading">Projects res</h1>
       <Container>
         <div className="android">
           <div className="left">
