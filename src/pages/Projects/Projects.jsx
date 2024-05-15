@@ -34,7 +34,7 @@ function Projects({ title, subtitle }) {
   };
   return (
     <>
-      <h1 className="heading">Projects</h1>
+      <h1 className="heading">Projects hello</h1>
       <Container>
         <div className="android">
           <div className="left">
