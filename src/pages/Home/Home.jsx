@@ -2,24 +2,20 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import "./homestyle.css";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import SocialIcon from "../../component/SocialIcon/SocialIcon";
-
-import Experience from "../Experience/Experience";
-import Projects from "../Projects/Projects";
-
+import { useNavigate } from "react-router-dom";
 function Home(props) {
   const text = useTypewriter({
     words: [
       "Node Js Developer...",
       "React Developer...",
-      "React Native Developer...",
+      "React Native Dev...",
       "Angular Developer...",
     ],
     loop: {},
     typeSpeed: 100,
     // deleteSpeed: 80,
   });
-
+  const navigate = useNavigate();
   return (
     <>
       <Container className="home">
@@ -30,6 +26,19 @@ function Home(props) {
             <br />a {text[0]}
             <Cursor cursorColor="#ff014f" cursorStyle="|"></Cursor>
           </h1>
+          <p>
+            I'm web designer & front‑end developer focused on crafting clean &
+            user‑friendly experiences, I am passionate about building excellent
+            software that improves the lives of those around me.
+          </p>
+          <button
+            onClick={() => {
+              navigate("/about");
+            }}
+            class="btn"
+          >
+            Know More About Me
+          </button>
         </div>
         <div className="right">
           <div className="imgcon">
@@ -37,8 +46,6 @@ function Home(props) {
           </div>
         </div>
       </Container>
-      <h1 className="heading">Experience</h1>
-      <Experience></Experience>
     </>
   );
 }

@@ -1,10 +1,11 @@
 .home {
   color: white;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+
   /* border: 1px solid red; */
 }
 .home .left {
@@ -17,10 +18,46 @@
   color: #ff014f;
 }
 .home .left h1 {
-  font-size: 100px;
+  font-size: 70px;
 }
 .right {
   /* border: 1px solid pink; */
+}
+
+/* //button css */
+.btn {
+  color: rgb(255, 52, 108);
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid rgb(255, 52, 108);
+  padding: 10px 20px;
+  font-size: 17px;
+  font-weight: bold;
+  background: transparent;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+.btn:hover {
+  color: white;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  top: 0;
+  left: -40px;
+  transform: skewX(45deg);
+  background-color: rgb(255, 52, 108);
+  z-index: -1;
+  transition: all 1s;
+}
+
+.btn:hover::before {
+  width: 160%;
 }
 
 .imgcon img {
@@ -36,31 +73,31 @@
 
 @keyframes superman {
   0% {
-    border-color: rgb(42, 42, 120);
+    border-color: rgb(226, 85, 104);
     transform: translate(0, 0px);
-    box-shadow: 10px 10px 100px 50px rgb(45, 45, 145);
+    box-shadow: 10px 10px 100px 25px rgb(236, 72, 179);
   }
 
   25% {
     border-color: rgb(210, 212, 94);
-    box-shadow: 10px 10px 100px 50px rgb(202, 204, 93);
+    box-shadow: 10px 10px 100px 25px rgb(202, 204, 93);
   }
 
   50% {
-    border-color: rgb(65, 65, 170);
+    border-color: rgb(91, 226, 91);
     transform: translate(0, 10px);
-    box-shadow: 10px 10px 100px 50px rgb(47, 47, 152);
+    box-shadow: 10px 10px 100px 25px rgb(79, 235, 133);
   }
 
   75% {
     border-color: rgb(130, 217, 160);
-    box-shadow: 10px 10px 100px 50px rgb(130, 217, 160);
+    box-shadow: 10px 10px 100px 25px rgb(130, 217, 160);
   }
 
   100% {
-    border-color: rgb(50, 55, 205);
+    border-color: rgb(63, 210, 229);
     transform: translate(0, -0px);
-    box-shadow: 10px 10px 100px 50px rgb(50, 55, 205);
+    box-shadow: 10px 10px 100px 25px rgb(76, 201, 232);
   }
 }
 
@@ -92,7 +129,7 @@
   .home {
     height: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     /* align-items: flex-start; */
     align-content: space-between;
     justify-content: center;
@@ -105,7 +142,7 @@
     min-height: 400px;
   }
   .home .left h1 {
-    font-size: 65px;
+    font-size: 37px;
     width: 100%;
   }
   .heading {

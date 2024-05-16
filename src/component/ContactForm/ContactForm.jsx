@@ -3,8 +3,15 @@ import emailjs from "@emailjs/browser";
 import "./contact.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
+import { useState } from "react";
 function ContactForm(props) {
+  const [formData, setFormData] = useState({
+    from_name: "",
+    from_email: "",
+    from_subject: "",
+    message: "",
+  });
+
   const notify = (state) => {
     if (state === "error") {
       toast.error(" Unable to Send Message", {
@@ -16,36 +23,51 @@ function ContactForm(props) {
         theme: "dark",
       });
     } else {
-      toast.success("Message Send Successfully", {
+      toast.success("Message Sent Successfully", {
         position: "top-center",
         autoClose: 5000,
         hideProgressBar: false,
         closeOnClick: true,
-
         progress: undefined,
         theme: "dark",
       });
     }
   };
-  function sendEmail(e) {
+
+  const handleInputChange = (event) => {
+    setFormData({
+      ...formData,
+      [event.target.name]: event.target.value,
+    });
+  };
+
+  const sendEmail = async (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
+    try {
+      const response = await emailjs.sendForm(
         "service_ixt7mvc",
         "template_4qfmr0c",
         e.target,
         "RoMiiO_MUSVOpkSw0"
-      )
-      .then(
-        (result) => {
-          notify("success");
-        },
-        (error) => {
-          notify("error");
-        }
       );
-  }
+
+      if (response.status === 200) {
+        setFormData({
+          from_name: "",
+          from_email: "",
+          from_subject: "",
+          message: "",
+        });
+        notify("success");
+      } else {
+        notify("error");
+      }
+    } catch (error) {
+      console.error("Error sending email:", error);
+      notify("error");
+    }
+  };
 
   return (
     <>
@@ -73,6 +95,8 @@ function ContactForm(props) {
                 className="input-field"
                 type="text"
                 name="from_name"
+                value={formData.from_name}
+                onChange={handleInputChange}
               />
             </div>
 
@@ -83,6 +107,8 @@ function ContactForm(props) {
                 className="input-field"
                 type="email"
                 name="from_email"
+                value={formData.from_email}
+                onChange={handleInputChange}
               />
             </div>
 
@@ -93,6 +119,8 @@ function ContactForm(props) {
                 className="input-field"
                 type="text"
                 name="from_subject"
+                value={formData.from_subject}
+                onChange={handleInputChange}
               />
             </div>
 
@@ -104,6 +132,8 @@ function ContactForm(props) {
                 rows="3"
                 className="input-field"
                 name="message"
+                value={formData.message}
+                onChange={handleInputChange}
               ></textarea>
             </div>
 
