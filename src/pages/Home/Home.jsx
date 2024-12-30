@@ -37,7 +37,7 @@ function Home(props) {
             }}
             class="btn"
           >
-            Know More About Me
+            Know More About Me.
           </button>
         </div>
         <div className="right">
