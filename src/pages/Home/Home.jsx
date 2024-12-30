@@ -18,7 +18,7 @@ function Home(props) {
   const navigate = useNavigate();
   return (
     <>
-      <Container className="home">
+      <div className="home flex-wrap">
         <div className="left">
           <p>HI👋,WELCOME TO MY WORLD</p>
           <h1>
@@ -45,7 +45,7 @@ function Home(props) {
             <img src={require("../../assets/image.jpg")} alt="" />
           </div>
         </div>
-      </Container>
+      </div>
     </>
   );
 }
