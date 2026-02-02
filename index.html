@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Amit Nale | React Native Developer</title>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#1392ec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#0f172a",
+                    },
+                    fontFamily: {
+                        display: ["Inter", "sans-serif"]
+                    },
+                },
+            },
+        }
+    </script>
+
+    <style>
+        .glass-effect {
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white">
+
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 inset-x-0 z-50 glass-effect bg-white/70 dark:bg-background-dark/70 px-6 py-3">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <h2 class="text-xl font-bold">Amit.dev</h2>
+            <div class="hidden md:flex gap-8">
+                <a href="#about" class="hover:text-primary">About</a>
+                <a href="#projects" class="hover:text-primary">Projects</a>
+                <a href="#experience" class="hover:text-primary">Experience</a>
+                <a href="#contact" class="hover:text-primary">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-24">
+
+        <!-- HERO -->
+        <section class="max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <h1 class="text-5xl md:text-7xl font-black leading-tight">
+                    Hi, I'm Amit<br />
+                    <span class="text-primary">React Native</span> Developer
+                </h1>
+                <p class="mt-6 text-lg text-slate-500 max-w-xl">
+                    Driven React Native developer with a passion for building scalable
+                    mobile applications through innovative problem-solving and
+                    continuous learning.
+                </p>
+                <div class="mt-8 flex gap-4">
+                    <a href="#projects" class="bg-primary text-white px-8 py-4 rounded-lg font-bold">View Projects</a>
+                    <a href="#contact" class="glass-effect px-8 py-4 rounded-lg font-bold">Contact</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="max-w-7xl mx-auto px-6 py-20 border-t border-slate-800">
+            <h2 class="text-3xl font-bold mb-6">About Me</h2>
+            <p class="text-slate-400 max-w-3xl">
+                Driven React Native developer with a passion for building scalable mobile
+                applications through innovative problem-solving, continuous learning,
+                and a strong foundation in programming.
+            </p>
+
+            <h3 class="text-2xl font-bold mt-12 mb-4">Skills</h3>
+            <div class="flex flex-wrap gap-4">
+                <div class="glass-effect px-5 py-3 rounded-xl">React Native, React, REST API, Next.js</div>
+                <div class="glass-effect px-5 py-3 rounded-xl">Node.js</div>
+                <div class="glass-effect px-5 py-3 rounded-xl">PostgreSQL, MySQL, MongoDB</div>
+                <div class="glass-effect px-5 py-3 rounded-xl">Git, GitHub, Docker, Jenkins, IIS</div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="max-w-7xl mx-auto px-6 py-20">
+            <h2 class="text-4xl font-bold mb-10">Projects</h2>
+
+            <div class="grid md:grid-cols-2 gap-8">
+
+                <!-- <div class="glass-effect p-6 rounded-2xl">
+                    <h3 class="text-xl font-bold mb-2">Bluetooth-Connected Uroflowmeter App</h3>
+                    <p class="text-slate-400 text-sm">
+                        Medical diagnostics app connecting via BLE to capture real-time
+                        uroflow data. Native chart rendering and local history storage.
+                    </p>
+                    <p class="mt-2 text-xs text-primary">
+                        React Native · BLE · SQLite · Kotlin · MPAndroidChart
+                    </p>
+                </div>
+
+                <div class="glass-effect p-6 rounded-2xl">
+                    <h3 class="text-xl font-bold mb-2">TV Advertisement App</h3>
+                    <p class="text-slate-400 text-sm">
+                        Offline-first TV advertisement system for malls with deterministic
+                        multi-device synchronization and device health monitoring.
+                    </p>
+                </div> -->
+
+                <div class="glass-effect p-6 rounded-2xl">
+                    <div class="mb-5 rounded-xl overflow-hidden border border-white/10">
+                        <img src="./geeta.png" alt="Geeta Vaani App Screenshot"
+                            class="w-full h-64 object-contain hover:scale-105 transition-transform duration-500" />
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Geeta Vaani App</h3>
+
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Fully offline Bhagavad Gita reading app with smooth animations,
+                        optimized long-form reading UI, and SQLite-based local storage.
+                    </p>
+
+                    <p class="mt-3 text-xs text-primary font-semibold">
+                        React Native · SQLite · Reanimated · Offline Storage
+                    </p>
+
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section id="experience" class="max-w-4xl mx-auto px-6 py-20">
+            <h2 class="text-3xl font-bold mb-10 text-center">Experience</h2>
+
+            <div class="glass-effect p-6 rounded-xl">
+                <span class="text-primary text-sm font-bold">April 2024 — Present</span>
+                <h3 class="text-xl font-bold mt-2">React Native Developer</h3>
+                <p class="text-slate-400">Mitroz Technologies · Pune</p>
+                <p class="mt-4 text-slate-400 text-sm">
+                    Building and deploying cross-platform mobile applications using React Native.
+                    Worked on native modules, BLE devices, push notifications,
+                    Google Maps integration, and real-time APIs for healthcare and enterprise apps.
+                </p>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section class="max-w-4xl mx-auto px-6 py-20">
+            <h2 class="text-3xl font-bold mb-8">Education</h2>
+
+            <div class="space-y-6">
+                <div class="glass-effect p-6 rounded-xl">
+                    <h3 class="font-bold">MSc Computer Science</h3>
+                    <p class="text-slate-400 text-sm">PUCSD · Oct 2021 – Jun 2023 · CGPA 6.30</p>
+                </div>
+
+                <div class="glass-effect p-6 rounded-xl">
+                    <h3 class="font-bold">BSc Computer Science</h3>
+                    <p class="text-slate-400 text-sm">K.J. Somaiyya College · Aug 2018 – Apr 2021 · 78%</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="max-w-3xl mx-auto px-6 py-24 text-center">
+            <div class="glass-effect p-10 rounded-3xl">
+                <h2 class="text-4xl font-bold mb-4">Let’s Build Something</h2>
+                <p class="text-slate-400 mb-6">Open to full-time & freelance opportunities</p>
+
+                <p class="text-sm text-slate-400">
+                    📧 amitnale.07@gmail.com<br />
+                    📞 +91 8551896010
+                </p>
+
+                <div class="mt-8 flex justify-center gap-6">
+                    <a href="https://github.com/Amitnale007" class="hover:text-primary">GitHub</a>
+                    <a href="https://www.linkedin.com/in/amit-nale" class="hover:text-primary">LinkedIn</a>
+                    <a href="https://auth.geeksforgeeks.org/user/amitnale017"
+                        class="hover:text-primary">GeeksForGeeks</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center text-xs text-slate-500 pb-10">
+        © 2026 Amit Nale · Built with Tailwind CSS
+    </footer>
+
+</body>
+
+</html>
