@@ -78,28 +78,70 @@
         </section>
 
         <!-- ABOUT -->
-        <section id="about" class="max-w-7xl mx-auto px-6 py-20 border-t border-slate-800">
-            <h2 class="text-3xl font-bold mb-6">About Me</h2>
-            <p class="text-slate-400 max-w-3xl">
-                Driven React Native developer with a passion for building scalable mobile
-                applications through innovative problem-solving, continuous learning,
-                and a strong foundation in programming.
-            </p>
-
-            <h3 class="text-2xl font-bold mt-12 mb-4">Skills</h3>
-            <div class="flex flex-wrap gap-4">
-                <div class="glass-effect px-5 py-3 rounded-xl">React Native, React, REST API, Next.js</div>
-                <div class="glass-effect px-5 py-3 rounded-xl">Node.js</div>
-                <div class="glass-effect px-5 py-3 rounded-xl">PostgreSQL, MySQL, MongoDB</div>
-                <div class="glass-effect px-5 py-3 rounded-xl">Git, GitHub, Docker, Jenkins, IIS</div>
+        <section class="max-w-7xl mx-auto px-6 py-20 border-t border-slate-200 dark:border-slate-800" id="about">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary">person</span>
+                        About Me
+                    </h2>
+                    <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
+                        I am a React Native specialist dedicated to creating fluid, responsive, and highly-performant
+                        mobile applications. My focus is on the intersection of engineering excellence and user-centric
+                        design.
+                    </p>
+                    <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+                        With over 5 years of experience, I navigate the full mobile lifecycle from initial architectural
+                        planning to successful App Store and Google Play deployment, ensuring your product stands out in
+                        a crowded market.
+                    </p>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary">auto_awesome</span>
+                        Technical Stack
+                    </h2>
+                    <div class="flex flex-wrap gap-4">
+                        <div
+                            class="skill-glow flex items-center gap-3 glass-effect bg-white dark:bg-slate-800/50 px-5 py-3 rounded-xl transition-all">
+                            <span class="material-symbols-outlined text-primary">flutter_dash</span>
+                            <span class="font-semibold">React Native</span>
+                        </div>
+                        <div
+                            class="skill-glow flex items-center gap-3 glass-effect bg-white dark:bg-slate-800/50 px-5 py-3 rounded-xl transition-all">
+                            <span class="material-symbols-outlined text-primary">code</span>
+                            <span class="font-semibold">TypeScript</span>
+                        </div>
+                        <div
+                            class="skill-glow flex items-center gap-3 glass-effect bg-white dark:bg-slate-800/50 px-5 py-3 rounded-xl transition-all">
+                            <span class="material-symbols-outlined text-primary">database</span>
+                            <span class="font-semibold">Firebase</span>
+                        </div>
+                        <div
+                            class="skill-glow flex items-center gap-3 glass-effect bg-white dark:bg-slate-800/50 px-5 py-3 rounded-xl transition-all">
+                            <span class="material-symbols-outlined text-primary">layers</span>
+                            <span class="font-semibold">Zustand / Redux</span>
+                        </div>
+                        <div
+                            class="skill-glow flex items-center gap-3 glass-effect bg-white dark:bg-slate-800/50 px-5 py-3 rounded-xl transition-all">
+                            <span class="material-symbols-outlined text-primary">javascript</span>
+                            <span class="font-semibold">Node.js</span>
+                        </div>
+                        <div
+                            class="skill-glow flex items-center gap-3 glass-effect bg-white dark:bg-slate-800/50 px-5 py-3 rounded-xl transition-all">
+                            <span class="material-symbols-outlined text-primary">api</span>
+                            <span class="font-semibold">GraphQL</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- PROJECTS -->
-        <section id="projects" class="max-w-7xl mx-auto px-6 py-20">
+        <!-- <section id="projects" class="max-w-7xl mx-auto px-6 py-20">
             <h2 class="text-4xl font-bold mb-10">Projects</h2>
 
-            <div class="grid md:grid-cols-2 gap-8">
+            <div class="grid md:grid-cols-2 gap-8"> -->
 
                 <!-- <div class="glass-effect p-6 rounded-2xl">
                     <h3 class="text-xl font-bold mb-2">Bluetooth-Connected Uroflowmeter App</h3>
@@ -120,7 +162,7 @@
                     </p>
                 </div> -->
 
-                <div class="glass-effect p-6 rounded-2xl">
+                <!-- <div class="glass-effect p-6 rounded-2xl">
                     <div class="mb-5 rounded-xl overflow-hidden border border-white/10">
                         <img src="./geeta.png" alt="Geeta Vaani App Screenshot"
                             class="w-full h-64 object-contain hover:scale-105 transition-transform duration-500" />
@@ -136,8 +178,144 @@
                         React Native · SQLite · Reanimated · Offline Storage
                     </p>
 
+                </div> -->
+
+
+            <!-- </div>
+        </section> -->
+
+        <section class="max-w-7xl mx-auto px-6 py-20" id="projects">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+                <div class="space-y-2">
+                    <h2 class="text-4xl font-bold">Featured Projects</h2>
+                    <p class="text-slate-500">Selection of mobile applications I've built from scratch.</p>
+                </div>
+                <div class="flex gap-2">
+                    <button class="p-2 border border-slate-700 rounded-lg hover:bg-primary/10 transition-colors">
+                        <span class="material-symbols-outlined">filter_list</span>
+                    </button>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <!-- <div class="group relative overflow-hidden rounded-2xl glass-effect bg-slate-800/30">
+                    <div class="aspect-[9/16] w-full bg-slate-900 flex items-center justify-center p-4">
+                        <div
+                            class="w-full h-full rounded-[2.5rem] border-8 border-slate-800 overflow-hidden shadow-2xl">
+                            <div class="w-full h-full bg-cover bg-center group-hover:scale-110 transition-transform duration-500"
+                                data-alt="Fintech mobile app mockup with charts"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAajO63wnrJ04NpQ5BiTmD9kwz4jr7TRVcPyIKWBD3YarRFjsJWBnB00vK2lyoclFYlorFVQp5YrLbyPSohJx-N0tMJpXbNa7K7uViCbMplcev7M24dftncqKLfMxaO6Gi9_TjAfJ_MMsJefTSdo2jCfvdMC_vfPco-K2J5Lg7mNeTJa0lHYv7l67PGeQWssqIhQBtflfJUapgHrKLn-vWntMtlxuEM9aQXaXwZwgWZeY3KKfa2af4WC8Kh6udp0OTThvEOa4mvcVLs");'>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
+                        <div class="flex gap-2 mb-3">
+                            <span class="text-[10px] font-bold px-2 py-1 bg-primary text-white rounded">TS</span>
+                            <span
+                                class="text-[10px] font-bold px-2 py-1 bg-slate-700 text-white rounded">FIREBASE</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">FinVault App</h3>
+                        <p class="text-sm text-slate-300 mb-6">A cryptocurrency tracking and portfolio management app
+                            with real-time updates.</p>
+                        <div class="flex gap-4">
+                            <a class="flex-1 bg-white text-slate-900 font-bold py-2 rounded-lg text-center text-sm hover:bg-slate-200"
+                                href="#">Live Demo</a>
+                            <a class="p-2 bg-slate-800 rounded-lg hover:bg-slate-700" href="#">
+                                <span class="material-symbols-outlined text-white">code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="group relative overflow-hidden rounded-2xl glass-effect bg-slate-800/30">
+
+                    <!-- Mobile Mockup Frame -->
+                    <div class="aspect-[9/16] w-full bg-slate-900 flex items-center justify-center p-4">
+                        <div
+                            class="w-full h-full rounded-[2.5rem] border-8 border-slate-800 overflow-hidden shadow-2xl">
+                            <div class="w-full h-full bg-contain bg-center bg-no-repeat group-hover:scale-110 transition-transform duration-500"
+                                data-alt="Geeta Vaani Bhagavad Gita App Screenshot"
+                                style='background-image: url("./geeta.png");'>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hover Overlay -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent
+           opacity-0 group-hover:opacity-100 transition-opacity duration-300
+           flex flex-col justify-end p-8">
+
+                        <!-- Tech Badges -->
+                        <div class="flex gap-2 mb-3">
+                            <span class="text-[10px] font-bold px-2 py-1 bg-primary text-white rounded">
+                                RN
+                            </span>
+                            <span class="text-[10px] font-bold px-2 py-1 bg-slate-700 text-white rounded">
+                                SQLITE
+                            </span>
+                            <span class="text-[10px] font-bold px-2 py-1 bg-slate-700 text-white rounded">
+                                OFFLINE
+                            </span>
+                        </div>
+
+                        <!-- Title -->
+                        <h3 class="text-2xl font-bold mb-2">
+                            Geeta Vaani App
+                        </h3>
+
+                        <!-- Description -->
+                        <p class="text-sm text-slate-300 mb-6 leading-relaxed">
+                            Fully offline Bhagavad Gita reading app with smooth animations,
+                            optimized long-form reading UI, and fast local SQLite storage.
+                        </p>
+
+                        <!-- Actions -->
+                        <div class="flex gap-4">
+                            <a class="flex-1 bg-white text-slate-900 font-bold py-2 rounded-lg
+               text-center text-sm hover:bg-slate-200 transition-colors" href="#">
+
+                                App Preview
+                            </a>
+
+                            <a class="p-2 bg-slate-800 rounded-lg hover:bg-slate-700 transition-colors" href="#">
+
+                                <span class="material-symbols-outlined text-white">code</span>
+                            </a>
+                        </div>
+
+                    </div>
                 </div>
 
+                <!-- Project 2 -->
+                <!-- <div class="group relative overflow-hidden rounded-2xl glass-effect bg-slate-800/30">
+                    <div class="aspect-[9/16] w-full bg-slate-900 flex items-center justify-center p-4">
+                        <div
+                            class="w-full h-full rounded-[2.5rem] border-8 border-slate-800 overflow-hidden shadow-2xl">
+                            <div class="w-full h-full bg-cover bg-center group-hover:scale-110 transition-transform duration-500"
+                                data-alt="E-commerce mobile app mockup fashion"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCvsHoo3_DkE53TS-GxbhXmwyMbyV51m5NnP2JRBk9XjFwSqwAo40rvRXV5ZXs4RFQQc2RcaZXvLwitgWlfP-q2Qpz4ZbHoFrR7cd3JQ7UkGcu65zNE83RK78HcfWkBjKPnOlAAnO_H3OfR3vD70N2epfLOiMij-RziJSCG1_sGkodki7p0RyYSA0OZneBkGR3kp5m1cIrp_cqarns4BSVggw5EIz0Gb5zE5tIw7yoAPpKe52i7NXFQ9FUGR6Qs0v195ehCEic8As9N");'>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
+                        <div class="flex gap-2 mb-3">
+                            <span class="text-[10px] font-bold px-2 py-1 bg-indigo-500 text-white rounded">STRIPE</span>
+                            <span class="text-[10px] font-bold px-2 py-1 bg-slate-700 text-white rounded">ZUSTAND</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">ModaStore</h3>
+                        <p class="text-sm text-slate-300 mb-6">High-performance fashion retail experience with seamless
+                            payment integration.</p>
+                        <div class="flex gap-4">
+                            <a class="flex-1 bg-white text-slate-900 font-bold py-2 rounded-lg text-center text-sm"
+                                href="#">Live Demo</a>
+                            <a class="p-2 bg-slate-800 rounded-lg hover:bg-slate-700" href="#">
+                                <span class="material-symbols-outlined text-white">code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- Project 3 -->
 
             </div>
         </section>
